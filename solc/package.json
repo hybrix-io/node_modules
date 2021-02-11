@@ -1,31 +1,27 @@
 {
-  "_args": [
-    [
-      "solc@0.6.7",
-      "/Users/Rouke/Documents/InternetOfCoins/hybrixd/node"
-    ]
-  ],
-  "_from": "solc@0.6.7",
-  "_id": "solc@0.6.7",
+  "_from": "solc@0.6.12",
+  "_id": "solc@0.6.12",
   "_inBundle": false,
-  "_integrity": "sha512-a3iocjS1yGzw3Wy7jkqSLX3Vg1lMDCyoKZoVfpOagRGWkh37f11BrcUDO8f73rjdpw2WUBSLJtTQ26i52/0JOg==",
+  "_integrity": "sha512-Lm0Ql2G9Qc7yPP2Ba+WNmzw2jwsrd3u4PobHYlSOxaut3TtUbj9+5ZrT6f4DUpNPEoBaFUOEg9Op9C0mk7ge9g==",
   "_location": "/solc",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "solc@0.6.7",
+    "raw": "solc@0.6.12",
     "name": "solc",
     "escapedName": "solc",
-    "rawSpec": "0.6.7",
+    "rawSpec": "0.6.12",
     "saveSpec": null,
-    "fetchSpec": "0.6.7"
+    "fetchSpec": "0.6.12"
   },
   "_requiredBy": [
+    "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/solc/-/solc-0.6.7.tgz",
-  "_spec": "0.6.7",
+  "_resolved": "https://registry.npmjs.org/solc/-/solc-0.6.12.tgz",
+  "_shasum": "48ac854e0c729361b22a7483645077f58cba080e",
+  "_spec": "solc@0.6.12",
   "_where": "/Users/Rouke/Documents/InternetOfCoins/hybrixd/node",
   "author": {
     "name": "chriseth"
@@ -36,6 +32,7 @@
   "bugs": {
     "url": "https://github.com/ethereum/solc-js/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "command-exists": "^1.2.8",
     "commander": "3.0.2",
@@ -46,6 +43,7 @@
     "semver": "^5.5.0",
     "tmp": "0.0.33"
   },
+  "deprecated": false,
   "description": "Solidity compiler",
   "devDependencies": {
     "coveralls": "^3.0.0",
@@ -99,5 +97,5 @@
       "soljson.js"
     ]
   },
-  "version": "0.6.7"
+  "version": "0.6.12"
 }

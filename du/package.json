@@ -1,33 +1,33 @@
 {
-  "_from": "du",
-  "_id": "du@0.1.0",
+  "_from": "du@0.1.1",
+  "_id": "du@0.1.1",
   "_inBundle": false,
-  "_integrity": "sha1-8m40CgnHvFtv1pr2263qYPqMb00=",
+  "_integrity": "sha512-w6GM0nECmLD1kKi/YbmjOVAimivt2/3c2LoqEjT5rqxzqWMg/0hamVA4IMu1QCsMFF7euU8LEeTxNf+vwFdTTA==",
   "_location": "/du",
   "_phantomChildren": {},
   "_requested": {
-    "escapedName": "du",
-    "fetchSpec": "latest",
-    "name": "du",
-    "raw": "du",
-    "rawSpec": "",
+    "type": "version",
     "registry": true,
+    "raw": "du@0.1.1",
+    "name": "du",
+    "escapedName": "du",
+    "rawSpec": "0.1.1",
     "saveSpec": null,
-    "type": "tag"
+    "fetchSpec": "0.1.1"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/du/-/du-0.1.0.tgz",
-  "_shasum": "f26e340a09c7bc5b6fd69af6dbadea60fa8c6f4d",
-  "_spec": "du",
-  "_where": "/home/user/Build/IoC/hybrixd/node",
+  "_resolved": "https://registry.npmjs.org/du/-/du-0.1.1.tgz",
+  "_shasum": "081d5502a729a16bdb3a979f2323c288daff4384",
+  "_spec": "du@0.1.1",
+  "_where": "/Users/Rouke/Documents/InternetOfCoins/hybrixd/node",
   "authors": [
     "Rod Vagg @rvagg <rod@vagg.org> (https://github.com/rvagg)"
   ],
   "bin": {
-    "dujs": "./du.js"
+    "dujs": "du.js"
   },
   "bugs": {
     "url": "https://github.com/rvagg/node-du/issues"
@@ -36,7 +36,7 @@
   "dependencies": {
     "async": "~0.1.22"
   },
-  "deprecated": "no longer maintained",
+  "deprecated": false,
   "description": "A simple JavaScript implementation of `du -sb`",
   "devDependencies": {
     "mkfiletree": "*"
@@ -48,9 +48,6 @@
   ],
   "main": "index.js",
   "name": "du",
-  "optionalDependencies": {},
-  "readme": "# node-du\nA simple JavaScript / Node.js implementation of `du -sb`. Available in npm as *du*\n\n```js\nrequire('du')('/home/rvagg/.npm/', function (err, size) {\n  console.log('The size of /home/rvagg/.npm/ is:', size, 'bytes')\n})\n```\n\nAlso comes with a `dujs` command if installed with `npm install du -g`, just in case `du -sb` was too many 2 too many characters for you to type.\n\n## options\n\nAn optional `options` object may be passed as the second argument. Currently there is only two options,\na `'filter'` function that is passed a full file path and is expected to return a truthy/falsy value to indicate whether the file is included in size calculations\nand a `disk` option. If disk is true, then block sizing is used when calculating the size. (get's you closer to real du numbers).\n\n```js\ndu(\n    '/tmp/foo.leveldb/'\n  , { filter: function (f) { return /\\.sst$/.test(f) } }\n  , function (err, size) {\n      console.log('The size of the sst files in /tmp/foo.leveldb/ is:', size, 'bytes')\n    }\n)\n```\n\n*Copyright (c) 2012 [Rod Vagg](https://github.com/rvagg) ([@rvagg](https://twitter.com/rvagg))*\n\nMade available under the MIT licence:\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is furnished\nto do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
-  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rvagg/node-du.git"
@@ -58,5 +55,5 @@
   "scripts": {
     "test": "node tests.js"
   },
-  "version": "0.1.0"
+  "version": "0.1.1"
 }

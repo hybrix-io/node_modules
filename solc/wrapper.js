@@ -140,7 +140,7 @@ function setupMethods (soljson) {
     var addFunction = soljson.addFunction || soljson.Runtime.addFunction;
     var removeFunction = soljson.removeFunction || soljson.Runtime.removeFunction;
 
-    var cb = addFunction(singleCallback);
+    var cb = addFunction(singleCallback, 'viiiii');
     var output;
     try {
       args.push(cb);
@@ -328,7 +328,7 @@ function setupMethods (soljson) {
     // instead of from the local filesystem.
     loadRemoteVersion: function (versionString, cb) {
       var mem = new MemoryStream(null, {readable: false});
-      var url = 'https://raw.githubusercontent.com/ethereum/solc-bin/gh-pages/bin/soljson-' + versionString + '.js';
+      var url = 'https://solc-bin.ethereum.org/bin/soljson-' + versionString + '.js';
       https.get(url, function (response) {
         if (response.statusCode !== 200) {
           cb(new Error('Error retrieving binary: ' + response.statusMessage));
